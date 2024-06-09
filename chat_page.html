@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>CHATTERBOXES OF 6J</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body background="background.avif">
+        <div class="container">
+            <button id="back" onclick="back()" class="glyphicon glyphicon-log-out btn btn-danger">Back</button>
+            <span><button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button></span>
+            <center>
+                <h1 class="header">
+                    CHATTERBOXES OF 6J
+                    <sup>
+                        <img src="CHATTERBOX LOGO.png">
+                    </sup>
+                </h1>
+                <div style="text-align: left; margin-bottom: 70px;" id="output"> </div>
+            </center>
+        </div>
+        <center>
+            <div class="input_div_message_page">
+                <label>Send:</label>
+                <input type="text" id="msg" class="form-control" placeholder="Message">
+                <button onclick="send()" class="btn btn-success">Send</button>
+            </div>
+            <script src="chat_page.js"></script>
+        </center>
+    </body>
+</html>
